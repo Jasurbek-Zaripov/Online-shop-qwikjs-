@@ -1,0 +1,12 @@
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    @apply transition-all h-8 w-8 outline-none border-2 border-solid border-red-500 rounded-full appearance-none
+  }
+  
+  input:checked {
+    @apply animate-bounce  border-[3px]
+  }
+  input:hover {
+    @apply  border-4
+  }

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-gradient-to-tr from-red-600 to-yellow-600 bg-no-repeat select-none font-mono
+}
+body {
+    @apply min-h-screen flex flex-col
+}
+.text-gr {
+    @apply bg-clip-text text-transparent
+}
