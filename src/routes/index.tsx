@@ -1,5 +1,6 @@
 import { component$, Resource } from '@builder.io/qwik';
-import { DocumentHead, RequestHandler, useEndpoint } from '@builder.io/qwik-city';
+import type { DocumentHead, RequestHandler} from '@builder.io/qwik-city';
+import { useEndpoint } from '@builder.io/qwik-city';
 import TheShowImage from '~/components/TheShowImage';
 import { MetaName } from '~/types';
 

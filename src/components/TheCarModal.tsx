@@ -21,7 +21,7 @@ export default component$(() => {
             else {
                 track(() => p.count);
                 totalCount.value += p.price * p.count;
-            };
+            }
         }
 
         return () => {

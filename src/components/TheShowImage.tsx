@@ -9,7 +9,7 @@ export interface IShowImageProp {
 export default component$((p: IShowImageProp) => {
     const state = useStore({ title: '', image: '' });
 
-    useClientEffect$(({ track, cleanup }) => {
+    useClientEffect$(({ track }) => {
         track(() => state.image);
         state.image = p.image;
         state.title = p.title;

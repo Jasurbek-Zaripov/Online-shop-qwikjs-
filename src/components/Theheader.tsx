@@ -2,7 +2,7 @@ import { component$, Resource, useContext, useResource$, useStylesScoped$ } from
 import { ShowCartContextName } from "~/routes/layout";
 import HeaderStyle from './TheHeader.css?inline';
 
-export interface IHeaderProp { id: number, name: string; };
+export interface IHeaderProp { id: number, name: string; }
 
 export default component$(() => {
     useStylesScoped$(HeaderStyle);

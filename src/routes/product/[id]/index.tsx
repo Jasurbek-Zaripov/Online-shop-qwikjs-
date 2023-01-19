@@ -1,12 +1,13 @@
 import { component$, Resource, useContext, useStylesScoped$, useTask$ } from "@builder.io/qwik";
-import { DocumentHead, Link, RequestHandler, useEndpoint } from "@builder.io/qwik-city";
+import type { DocumentHead, RequestHandler } from "@builder.io/qwik-city";
+import { useEndpoint } from "@builder.io/qwik-city";
 import TheImage from "~/components/TheImage";
-import { IProductByCategory } from "~/routes/category/[category]";
+import type { IProductByCategory } from "~/routes/category/[category]";
 import { CartStoreContextName } from "~/routes/layout";
 import { MetaName } from "~/types";
 import ProductStyle from './style.css?inline';
 
-export interface IProduct extends IProductByCategory { };
+export interface IProduct extends IProductByCategory { }
 
 export const onGet: RequestHandler<IProduct> = ({ params: { id } }) => {
     const host = import.meta.env.VITE_STORY_HOST;
